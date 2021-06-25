@@ -7,7 +7,7 @@ const Review = () => {
   // const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   const [reviews, setReviews] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/reviews")
+    fetch("https://ancient-crag-99991.herokuapp.com/reviews")
       .then((res) => res.json())
       .then((data) => setReviews(data));
   }, []);

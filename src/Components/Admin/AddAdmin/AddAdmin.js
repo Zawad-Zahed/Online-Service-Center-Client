@@ -14,7 +14,7 @@ const AddAdmin = () => {
     const adminEmail = {
       email: data.email,
     };
-    const url = `http://localhost:5000/addAdmin`;
+    const url = `https://ancient-crag-99991.herokuapp.com/addAdmin`;
     console.log(adminEmail);
 
     fetch(url, {
