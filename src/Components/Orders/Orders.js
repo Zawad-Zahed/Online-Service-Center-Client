@@ -22,7 +22,7 @@ const Orders = () => {
   const { _id } = useParams();
   const [service, setService] = useState([]);
   useEffect(() => {
-    fetch("https://ancient-crag-99991.herokuapp.com/services")
+    fetch("http://localhost:5000/services")
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
@@ -39,7 +39,7 @@ const Orders = () => {
       paymentId,
     };
     console.log(newOrder);
-    fetch("https://ancient-crag-99991.herokuapp.com/addOrder", {
+    fetch("http://localhost:5000/addOrder", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(newOrder),

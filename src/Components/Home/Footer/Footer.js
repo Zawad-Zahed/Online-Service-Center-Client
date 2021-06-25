@@ -7,7 +7,7 @@ const Footer = () => {
       <footer>
         <div className="container d-flex p-2 ">
           <div className="justify-content-center col-md-6 ">
-            <div className="mt-5 pt-5">
+            <div className="mt-5 pt-4">
               <h5>This Project is Under Construction</h5>
               <h5>Company Provider</h5>
               <br />

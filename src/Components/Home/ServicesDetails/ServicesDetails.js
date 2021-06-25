@@ -23,10 +23,10 @@ const ServicesDetails = ({ service }) => {
   return (
     <div className="row col-md-3 ml-2 ">
       <div
-        className="card"
+        className="card  "
         style={{
           width: "18rem",
-          boxShadow: "0px 0px 10px",
+          boxShadow: "0px 0px 10px grey",
           margin: "10px",
         }}
       >
