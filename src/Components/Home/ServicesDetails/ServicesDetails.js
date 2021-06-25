@@ -18,7 +18,6 @@ const ServicesDetails = ({ service }) => {
 
   const { imageUrl, name, price, _id } = service;
 
-  // console.log(name);
 
   return (
     <div className="row col-md-3 ml-2 ">

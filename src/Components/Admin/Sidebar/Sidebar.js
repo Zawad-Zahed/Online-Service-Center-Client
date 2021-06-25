@@ -19,17 +19,17 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      {/* {isAdmin && ( */}
-      <div>
-        <Link to="/admin" class="active">
-          Dashboard
-        </Link>
-        <Link to="/manageService"> Manage service</Link>
-        <Link to="/allOrder">All Order</Link>
-        <Link to="/addService">Add services</Link>
-        <Link to="/addAdmin">Create admin</Link>
-      </div>
-      {/* )} */}
+      {isAdmin && (
+        <div>
+          <Link to="/admin" class="active">
+            Dashboard
+          </Link>
+          <Link to="/manageService"> Manage service</Link>
+          <Link to="/allOrder">All Order</Link>
+          <Link to="/addService">Add services</Link>
+          <Link to="/addAdmin">Create admin</Link>
+        </div>
+      )}
 
       <Link to="/addReview">Review</Link>
       <Link to="/orderList">Order List</Link>
