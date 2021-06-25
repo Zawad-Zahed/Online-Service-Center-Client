@@ -12,7 +12,7 @@ const AllOrder = () => {
     setShow(true);
   };
   const handleClick = (id) => {
-    const url = `http://localhost:5000/update/${id}`;
+    const url = `https://ancient-crag-99991.herokuapp.com/update/${id}`;
     fetch(url, {
       method: "POST",
       headers: {
@@ -30,7 +30,7 @@ const AllOrder = () => {
   console.log(orders);
 
   useEffect(() => {
-    fetch("http://localhost:5000/allOrder")
+    fetch("https://ancient-crag-99991.herokuapp.com/allOrder")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);

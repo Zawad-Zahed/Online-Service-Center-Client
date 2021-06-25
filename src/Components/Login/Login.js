@@ -93,7 +93,7 @@ function Login() {
 
           <button
             type="button"
-            className="btn btn-primary d-flex justify-content-xxl-center "
+            className="btn btn-primary d-flex justify-content-center "
             onClick={handleSignIn}
           >
             <FontAwesomeIcon icon={faGoogle} />

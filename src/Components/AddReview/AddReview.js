@@ -11,7 +11,7 @@ const AddReview = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    const url = `http://localhost:5000/addReview`;
+    const url = `https://ancient-crag-99991.herokuapp.com/addReview`;
     // console.log(serviceData)
 
     fetch(url, {

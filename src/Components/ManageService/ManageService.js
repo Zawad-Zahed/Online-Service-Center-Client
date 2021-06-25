@@ -7,13 +7,13 @@ const ManageService = () => {
   const [services, setServices] = useState([]);
   // console.log(products);
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch(`https://ancient-crag-99991.herokuapp.com/services`)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [services]);
   const handleDelete = (id) => {
     console.log(id);
-    fetch(`http://localhost:5000/deleteService/${id}`, {
+    fetch(`https://ancient-crag-99991.herokuapp.com/deleteService/${id}`, {
       method: "DELETE",
     }).then((res) => {
       if (res) {

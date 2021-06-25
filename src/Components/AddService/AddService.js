@@ -18,7 +18,7 @@ const AddService = () => {
       imageUrl: serviceImg,
       price: data.price,
     };
-    const url = `http://localhost:5000/addService`;
+    const url = `https://ancient-crag-99991.herokuapp.com/addService`;
     // console.log(serviceData)
 
     fetch(url, {
